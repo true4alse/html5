@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성/링크태그</title>
+</head>
+<body>
+    <h1>태그의 속성</h1>
+    <p>태그의 속성은 시작태그에서 태그명 뒤 한칸띠어서 구분을 한다.</p>
+    <p>기본규칙- 속성 명 = "속성 값" (=는 =기준 우측의 값을 왼쪽에 저장한다 라는 의미로 사용됨)</p>
+
+    <h1>링크태그</h1>
+    <p>홈페이지를 다른페이지로 이동시켜줄 때 사용하는 태그</p>
+    <p>target이라는 속성을 사용해서 새 탭에서 페이지 이동을 시켜줄 수 있다. 기본값은 _self / 새탭에서 이동값 _blank</p>
+    <p>사용 시 줄바꿈이 되지않는다(인라인레벨태그)</p>
+    <a href="https://www.naver.com/" target="_blank">네이버로 바로가기</a>
+    <h2>절대경로와 상대경로</h2>
+    <p>절대경로는 웹 상의 페이지 주소</p>
+    <p>상대경로는 현재파일 위치 기준 목적지 파일까지의 경로</p>
+    <p>. -> 현재파일이있는 폴더의 위치를 불러옴</p>
+    <p>/ -> 폴더를 연다</p>
+    <p>.. ->현재파일기준 상위폴더의 위치를 불러옴</p>
+    <a href="../welcome.html">welcome페이지로 바로가기</a>
+    <a href="./sub1.html">서브페이지1로 이동</a>
+    <a href="./sub/sub2.html">서브페이지2로 이동</a>
+
+    <h2>강조태그</h2>
+    <p>강조태그란 특별하게 강조하고싶은 단어나 문장에 사용되는 태그</p>
+    <p>사용 시 줄바꿈이 되지않는다(인라인레벨태그)</p>
+    <p>strong,b,em,i,span</p>
+    <p><b style="color:red">Lorem</b> ipsum <strong style="color:blue">dolor</strong> sit amet consectetur, <i style="color:green;background:rgb(37, 37, 34)">adipisicing elit. Neque exercitationem a veritatis nulla voluptates perferendis fuga provident.</i> Reprehenderit sunt fugit at doloribus blanditiis, enim accusantium, quae <span>aspernatur</span> vel porro <em>fugiat.</em></p>
+</body>
+</html>
