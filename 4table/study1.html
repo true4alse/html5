@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table - 표</title>
+</head>
+<body>
+    <h1>table태그 - 표</h1>
+    <p>표를 구성할 때 사용하는 태그</p>
+    <p>표는 행(tr)태그를 구성하여 행을 먼저 만든 후 각각의 행태그안에 셀을 좌측부터 포함시켜서 작성한다.</p>
+    <p>이 때 셀태그로 사용되는 태그는 분류적인성격을 갖는 컨텐츠는 (th)태그 내용성격의 컨텐츠는 (td)태그를 사용한다.</p>
+    <p>표 안에서 제목을 표현하고 싶다면 caption태그를 사용할 수 있다.</p>
+
+    <h2>셀 병합</h2>
+    <ol>
+        <li>병합이 시작되는 셀을 찾아서 가로병합(colspan)세로병합(rowspan)속성을 사용하여 선택한 셀 포함 몇칸 병합이 되는지 숫자를 적용해준다.</li>
+        <li>병합이 되어지는 셀들은 태그를 지운다.</li>
+    </ol>
+    <p>병합의 순서는 우리가 컨텐츠를 입력하는 순서와 같이 [좌->우, 위->아래] 이다.</p>
+    <p>tip)병합이 되어진 표를 구성할 때에는 처음부터 병합을 하면서 작업하지말고, 병합되기 전 표를 다 완성한 후 순차적으로 병합을 하는 것이 좋다.</p>
+    
+    <table border="1">
+        <caption>대표시간표</caption>
+        <tr>
+            <th></th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+        </tr>
+        <tr>
+            <th>오전</th>
+            <td colspan="2">출근</td>            
+            <td>휴무</td>
+            <td>출근</td>
+            <td rowspan="2">휴무</td>
+        </tr>
+        <tr>
+            <th>오후</th>
+            <td>휴무</td>
+            <td colspan="3">출근</td>
+        </tr>
+    </table>
+</body>
+</html>
