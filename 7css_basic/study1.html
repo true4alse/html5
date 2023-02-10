@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css기초1</title>
+</head>
+<body>
+    <h1>css style 입력방법</h1>
+    <ul>
+        <li>
+            <h2>inline-style / element-style</h2>
+            <p>html문서를 구성하는 tag를 직접 선택하여 tag의 시작tag부분에 style속성을 사용하여 스타일을 입력하는 방법</p>
+            <dl>
+                <dt>단점</dt>
+                <dd>
+                    <p>html태그를 직접 선택해야 하기 때문에 동시적인 수정이 어렵다.</p>
+                    <p>html태그문법과 css문법이 혼용되어있기 때문에 가독성이 떨어진다.</p>
+                </dd>
+            </dl>
+        </li>
+        <li>
+            <h2>내부스타일시트(internal style sheet)</h2>
+            <p>html문서의 보이지않는 정보를 수집하는 head태그의 공간에 style태그를 사용하여 스타일 정보를 입력하는 방식</p>
+            <dl>
+                <dt>단점</dt>
+                <dd>
+                    style-sheet가 (스타일태그가) html파일 안에 포함되어 있기 때문에 여러html파일의 스타일을 동시에 수정하기가 어렵다.
+                </dd>
+            </dl>
+        </li>
+        <li>
+            <h2>외부스타일시트(external style sheet)</h2>
+            <p>html문서의 head태그 공간에 link태그를 사용하여 html파일외부에 있는 css파일을 연결해서 스타일정보를 입력하는 방식</p>
+            <dl>
+                <dt>장점</dt>
+                <dd>하나의 css파일을 수정했을 때 연결되어있는 html파일이 동시에 수정될 수 있어서 유지보수하기가 굉장히 편리하다.</dd>
+            </dl>
+        </li>
+    </ul>
+</body>
+</html>
