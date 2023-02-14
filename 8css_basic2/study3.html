@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자의 우선순위 점수</title>
+    <style>
+        #b{color:black;}
+        #b{color:red;}
+        .a{color:green;}
+        h1{color:red;}
+        h1{color:blue;}
+        .aa{color:green;text-shadow:1px 1px 1px blue;}
+        h1.aa.a#b{background:green;color:gold;}
+        h1#b.a.aa.bb{color:aqua;}
+        h1.a{background:gold;}
+    </style>
+</head>
+<body>
+    <h1 style="color:lime;" class="a aa bb" id="b">선택자의 우선순위 점수</h1>
+    <p>선택자를 구성하는 우선순위점수의 합이 높을 수록 최종반영된다.</p>
+    
+    <ul>
+        <li>태그명 - 1점</li>
+        <li>클래스명 - 10점</li>
+        <li>아이디명 - 100점</li>
+        <li>인라인스타일방식 - 1000점</li>
+    </ul>
+    <p>선택자에 조건기본형태 - 태그명.클래스명#아이디명</p>
+    <p>선택자에 사용된 문자는 서로 합산된다.</p>
+
+</body>
+</html>
