@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display - 태그의 형태</title>
+    <style>
+        h1{border:1px solid red;}
+        h1~p{border:1px solid red;}
+        ul{border:1px solid blue;}
+        ul li{border:1px solid black;}
+        i,strong,b{border:1px solid green;}
+        .title{
+            width:400px;
+            height:400px;
+            display:inline;
+        }
+        .inline{
+            width:400px;
+            height:400px;
+            display:inline-block;
+        }
+        .ib{
+            width:400px;
+            height:400px;
+            display:inline-block;
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">태그의 형태를 결정짓는 display속성</h1>
+    <p>우리가 입력한 태그는 html태그의 공간에 하나씩 적재가 됩니다</p>
+    <p>태그의 형태는 크게 3가지가 있다.</p>
+    <ul>
+        <li>block레벨 태그 - display:block</li>
+        <li>inline레벨 태그 - display:inline</li>
+        <li>inline-block레벨 태그 - display:inline-block</li>
+    </ul>
+    <h2>block레벨 태그</h2>
+    <p>포함하는 컨텐츠의 양과 관계없이 무조건 부모태그의 적용된 너비만큼을 자동으로 상속받는다 - 그래서 br태그 사용없이도 줄바꿈이 가능하다</p>
+    <p>블록레벨태그는 박스형태이기 때문에 가로사이즈와 세로사이즈를 변경할 수 있다</p>
+
+    <h2>inline레벨 태그</h2>
+    <p>포함하는 컨텐츠의 양만큼 공간을 차지한다</p>
+    <p>가로와 세로사이즈의 기준이 명확하지않은 라인형태이기 때문에 가로세로사이즈를 지정할 수 없다</p>
+
+    <h2>inline-block레벨 태그</h2>
+    <p>인라인레벨태그처럼 포함하는 컨텐츠만큼의 공간을 차지하면서 동시에 블록레벨태그처럼 가로와 세로사이즈를 지정할 수 있는 박스형태의 태그</p>
+    
+    <i>i태그</i>
+    <p>p태그</p>
+    
+    <strong>strong태그</strong>
+    <b class="inline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rem laudantium fuga architecto distinctio, minima officiis omnis! Blanditiis consequuntur dolorem non, maxime amet tempora aliquam maiores praesentium, sapiente quas qui!</b>
+    <p class="ib">p태그 ib클래스</p>
+
+</body>
+</html>

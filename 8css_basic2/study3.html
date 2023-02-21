@@ -6,19 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>선택자의 우선순위 점수</title>
     <style>
-        #b{color:black;}
+        h1#b.a.aa.bb{color:blue}
         #b{color:red;}
+        h1.a{color:aqua}
         .a{color:green;}
-        h1{color:red;}
+        h1{color:red}
         h1{color:blue;}
-        .aa{color:green;text-shadow:1px 1px 1px blue;}
-        h1.aa.a#b{background:green;color:gold;}
-        h1#b.a.aa.bb{color:aqua;}
-        h1.a{background:gold;}
+        
     </style>
 </head>
 <body>
-    <h1 style="color:lime;" class="a aa bb" id="b">선택자의 우선순위 점수</h1>
+    <h1 style="color:navy" class="a aa bb" id="b">선택자의 우선순위 점수</h1>
     <p>선택자를 구성하는 우선순위점수의 합이 높을 수록 최종반영된다.</p>
     
     <ul>
