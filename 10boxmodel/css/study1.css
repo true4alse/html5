@@ -1,0 +1,29 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+h1{
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:40px;
+    margin-bottom:40px;
+    padding-left:50px;
+    padding-right:50px;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+h2{
+    /* border-width:1px;
+    border-style:solid;
+    border-color:red; */
+    border-top:3px solid blue;
+    border-bottom:3px solid blue;
+    border-left:10px solid red;
+    border-right:10px solid red;
+    /* 축약형 표현 css개별속성값을 띄어쓰기로 구분하여 한번에 입력하는 방법 */
+    margin-bottom:70px;
+}
+p{
+    border:1px solid green;
+    margin-top:50px;
+}
