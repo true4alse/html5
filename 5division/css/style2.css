@@ -1,0 +1,45 @@
+/* 1.reset - style */
+*{margin:0;padding:0;}
+ul,ol{list-style:none;}
+i,em,address{font-style:normal;}
+strong,b{font-weight:normal;}
+a{text-decoration:none;color:inherit;}
+html{font-size:14px;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:inherit;}
+
+/* 2.common - style */
+html{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 3.layout (대략 큰) */
+/* 
+    큰 영역의 태그먼저 사이즈 및 위치를 잡고
+    그다음으로 작은 영역 순으로 사이즈 및 위치를 잡아간다.
+    디자인 시안을 볼 때 배경색 및 배경이미지 혹은 테두리 스타일보고 화면 끝에서 끝까지 이어지는 경우 그리고 컨텐츠는 일정한 너비를 갖고 중앙에 배치되어있다면,
+    컨텐츠가 들어갈 영역을 새로 만들어주는 시야가 필요하다.
+*/
+.wrap{
+    width:920px;
+    margin:0 auto;
+}
+footer{}
+.innerFooter{
+    width:920px;
+    margin:0 auto;
+}
+
+/* 4. layout - detail 각 영역마다 세부적인 레이아웃을 완성 */
+/* header영역  */
+header{
+    border:1px solid red;
+    display:flex;
+    justify-content:space-between;
+}
+.logo{border:1px solid red;}
+nav{border:1px solid red;}
+.lnb{display:flex;border:1px solid red;justify-content:flex-end;
+margin-bottom:20px;}
+.lnb>li{border:1px solid blue;padding:2px 8px;}
+.gnb{display:flex;border:1px solid red;}
+.gnb>li{border:1px solid blue;padding:4px 8px;margin-right:5px;}
